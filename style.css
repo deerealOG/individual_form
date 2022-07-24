@@ -344,7 +344,7 @@ line-height: 150%;
 color: rgba(38, 34, 98, 0.6);
 height: 50px;
   }
-#inputField select:focus {
+#inputField input:focus {
   outline:  solid 2px #F37821;
 }
   #inputField button {
