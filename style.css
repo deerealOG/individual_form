@@ -118,9 +118,7 @@ body {
 #mycta .register:hover {
   color: #f37821;
 }
-#logo {
-padding: 10px 20px;
-}
+
 #logo:hover {
 cursor: pointer;
 }
@@ -241,7 +239,7 @@ Animations
   }
   main {
     position: relative;
-    top: 87px;
+    top: 40px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -293,6 +291,7 @@ font-weight: 500;
 font-size: 16px;
 line-height: 150%;
 color: #262262;
+width: 100%;
   } 
   #inputField input {
     background: rgba(38, 34, 98, 0.1);
@@ -318,35 +317,8 @@ height: 50px;
   
   }
 
-#inputField input[type="date"]{
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 300;
-font-size: 1rem;
-line-height: 150%;
-color: rgba(38, 34, 98, 0.6);
 
-}
-  #inputField input {
-    background: rgba(38, 34, 98, 0.1);
-border-radius: 10px;
-display: flex;
-flex-direction: row;
-justify-content: flex-start;
-align-items: center;
-padding: 10px 20px;
-border: transparent;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 300;
-font-size: 1rem;
-line-height: 150%;
-color: rgba(38, 34, 98, 0.6);
-height: 50px;
-  }
-#inputField input:focus {
-  outline:  solid 2px #F37821;
-}
+ 
   #inputField button {
     background: #F37821;
 border-radius: 10px;
