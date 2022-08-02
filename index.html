@@ -34,6 +34,10 @@
       <span id="logo">
         <img src="images/logo.svg" alt="brand logo" />
       </span>
+      <span id="yourcta" >
+        <button type="submit" class="login">Login</button>
+        <button type="submit" class="register">Register</button>
+      </span>
 
       <span id="desktop">
         <menu>
@@ -44,11 +48,7 @@
           </ul>
         </menu>
       </span>
-      <span id="mycta">
-        <button class="login">Login</button>
-        <button class="register">Register</button>
-        
-      </span>
+      
       
       <input id="toggle" type="checkbox"></input>
 
@@ -102,9 +102,14 @@
             </span>
             
             <span id="catTwo">
-                <span class="title">
-                <label for="Institution">Institution</label>
-                <input type="text" name="Institution" id="Institution" aria-roledescription="select">
+              <span class="title">
+                <label for="institution">Institution</label>
+                <select name="institution" id="institution">
+                    <option value="Uniport">Uniport</option>
+                    <option value="Lorem Ipsum">Lorem Ipsum</option>
+                    <option value="Lorem Ipsum">Lorem Ipsum</option>
+                </select>
+                <i id= "organizationtype" class="fa-solid fa-sort-down"></i>
                 </span>
 
                 <span class="title">
@@ -115,8 +120,13 @@
 
                   <span class="title">
                     <label for="location">Location</label>
-                    <input type="text" placeholder="Select your Location" name="dob" id="dob" aria-roledescription="select">
-                  </span>
+                    <select name="location" id="location">
+                        <option value="Port Harcourt">Port Harcourt</option>
+                        <option value="Lagos">Lagos</option>
+                        <option value="Abuja">Abuja</option>
+                    </select>
+                    <i id= "organizationtype" class="fa-solid fa-sort-down"></i>
+                    </span>
             </span>
             
             <button>Save</button>

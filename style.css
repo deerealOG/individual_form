@@ -24,7 +24,7 @@ body {
   justify-content:flex-start;
   gap: 5px;
   width: 100%;
-  height: 87px;
+  height: 80px;
   padding-right: 20px;
   padding-left: 15px;
   transition: all 0.7s ease-in;
@@ -32,6 +32,23 @@ body {
   top: 0;
   z-index: 10;
 }
+#navcta .login {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px 24px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #ffffff;
+  background: #f37821;
+  border: transparent;
+  border-radius: 10px;
+}
+
 #navcta .login {
   display: flex;
   flex-direction: row;
@@ -68,10 +85,9 @@ body {
   line-height: 140%;
   color: #ffffff;
   background: transparent;
-  border: solid 1px var(--button-color);
+  border: solid 1px #f37821;
   border-radius: 10px;
 }
-
 #mycta {
   display: none;
   flex-direction: row;
@@ -81,10 +97,19 @@ body {
   gap: 10px;
   padding: 0;
 }
-#mycta .login {
+
+#yourcta {
+  position: absolute;
+  top: 20px;
+  right: 18%;
+  display: flex;
+
+  gap: 8px;
+}
+#yourcta .login {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   padding: 0.5rem 1rem;
 
   font-family: "Poppins";
@@ -97,14 +122,49 @@ body {
   border: transparent;
   border-radius: 10px;
 }
-#mycta .login:hover{
+#yourcta .register {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #ffffff;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid #f37821;
+}
+#yourcta .register:hover {
+  color: #f37821;
+}
+
+#mycta .login {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0.625rem 1.25rem;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #ffffff;
+  background: #f37821;
+  border: transparent;
+  border-radius: 10px;
+}
+#mycta .login:hover {
   background: #ff6a00;
 }
 #mycta .register {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 0.5rem 1rem;
+  padding: 0.625rem 1.25rem;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
@@ -118,13 +178,13 @@ body {
 #mycta .register:hover {
   color: #f37821;
 }
-
 #logo:hover {
 cursor: pointer;
 }
 #logo img {
-height: 60px;
+  height: 3.375rem;
 }
+
 
 #toggle {
   display: none;
@@ -136,30 +196,34 @@ height: 60px;
 .hamburger {
   position: absolute;
   top: 4em;
-  right: 5%; 
+  right: 3%;
   margin-top: -45px;
-  width: 2em;
-  height: 45px;
+  width: 2.2em;
+  height: 40px;
   z-index: 5;
 }
 
 .hamburger div {
   position: relative;
-  top: -3px;
-  right: 20px;
-  width: 3em;
-  height: 7px;
+  top: -3.5px;
+  right: 3vw;
+  width: 2.6rem;
+  height: 8px;
   border-radius: 3px;
-  background: #ffffff;
-  margin-top: 8px;
+  background: #f37821;
+  margin-top: 6px;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 .nav {
   position: fixed;
   width: 100%;
   height: 100%;
   background: var(--overlay-color);
-  top:-100%;left:0%; right: 0; bottom: 0;
+  top: -100%;
+  left: 0%;
+  right: 0;
+  bottom: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   transform: scale(0);
@@ -170,15 +234,15 @@ height: 60px;
   height: 100%;
   width: 100%;
 }
-.nav-wrapper nav{
+.nav-wrapper nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 100px;
 }
-.nav a{
-  font-family: 'Poppins';
+.nav a {
+  font-family: "Poppins";
   font-style: normal;
   font-size: 1.2rem;
   font-weight: 700;
@@ -202,28 +266,7 @@ Animations
 }
 #toggle:checked + .hamburger .meat {
   transform: rotate(45deg);
-  margin-top: -7px;
-}
-
-#toggle:checked + .hamburger + .nav {
-  top: 0;
-  transform: scale(1);
-}
-
-/**
-Animations
-**/
-#toggle:checked + .hamburger .top-bun {
-  transform: rotate(-45deg);
-  margin-top: 25px;
-}
-#toggle:checked + .hamburger .bottom-bun {
-  opacity: 0;
-  transform: rotate(45deg);
-}
-#toggle:checked + .hamburger .meat {
-  transform: rotate(45deg);
-  margin-top: -7px;
+  margin-top: -8px;
 }
 
 #toggle:checked + .hamburger + .nav {
@@ -244,28 +287,29 @@ Animations
     padding-right: 20px;
   }
   #title {
-    font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 140%;
-color: #262262;
+    font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 140%;
+  color: #262262;
 position: relative;
-top:30px;
+top:25px;
+
   }
   #fill {
     font-family: 'Poppins';
 font-style: normal;
-font-weight: 500;
-font-size: 16px;
+font-weight: 600;
+font-size: 1rem;
 line-height: 150%;
 position: relative;
-top: 80px;
-color: #ADADAD;
+top: 40px;
+color: #adadad;
   }
   #inputField {
     position: relative;
-    top: 160px;
+    top: 90px;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -287,11 +331,12 @@ color: #ADADAD;
     gap: 10px;
     font-family: 'Poppins';
 font-style: normal;
-font-weight: 500;
-font-size: 16px;
+font-weight: 600;
+font-size: 1rem;
 line-height: 150%;
 color: #262262;
 width: 100%;
+position: relative;
   } 
   #inputField input {
     background: rgba(38, 34, 98, 0.1);
@@ -302,7 +347,7 @@ align-items: center;
 padding: 10px 20px;
 gap: 10px;
 border: transparent;
-height: 50px;
+height: 46px;
 width: 100%;
   }
   #inputField input:focus {
@@ -317,7 +362,40 @@ width: 100%;
   color: rgba(38, 34, 98, 0.6);
   
   }
+  #dob {
+    color: rgba(38, 34, 98, 0.6);
+  }
 
+  #inputField select {
+    background: rgba(38, 34, 98, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+    border: transparent;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 150%;
+    color: rgba(38, 34, 98, 0.6);
+    height: 46px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: "";
+  }
+  
+  #inputField select:focus {
+    outline: solid 2px #f37821;
+  }
+  #organizationtype {
+    position: absolute;
+    top: 45px;
+    right: 5%;
+  }
 
  
   #inputField button {
@@ -363,7 +441,7 @@ border: transparent;
       height: auto;
     }
     #navbar {
-      height: 100px;
+     
       position: fixed;
       left: 0;
       top: 0;
@@ -383,12 +461,8 @@ border: transparent;
     #hamburger {
       display: none;
     }
-    #logo {
-      padding: 20px;
-    }
-    #logo img {
-      height: 60px;
-    }
+  
+    
     #inputField {
       flex-direction: row;
       gap: 30px;
@@ -403,6 +477,10 @@ border: transparent;
     #catTwo {
       width: 48%;
     }
+    main {
+      padding: 0px 30px;
+      top: 120px;
+    }
     
   }
   @media all and (min-width: 860px){}
@@ -415,10 +493,7 @@ border: transparent;
       position: fixed;
     }
     
-    main {
-      padding: 0px 30px;
-      top: 120px;
-    }
+    
     .hamburger {
       display: none;
     }
@@ -465,7 +540,7 @@ border: transparent;
     }
   
     #navbar {
-      height: 100px;
+      
       z-index: 10;
       padding-left: 20px;
     }
@@ -480,6 +555,12 @@ border: transparent;
     #mycta .register {
       font-weight: 700;
       padding: 10px 24px;
+    }
+    .hamburger {
+      display: none;
+    }
+    #yourcta {
+      right: 5%;
     }
     
   @media all and (min-width: 1200px) {
