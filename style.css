@@ -372,8 +372,7 @@ width: 100%;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    text-indent: 1px;
-    text-overflow: "";
+    
   }
 
   #inputField select {
