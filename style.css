@@ -364,6 +364,15 @@ width: 100%;
   }
   #dob {
     color: rgba(38, 34, 98, 0.6);
+  
+  }
+  #dob::-webkit-inner-spin-button,
+  ::-webkit-calendar-picker-indicator{
+    display: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: "";
   }
 
   #inputField select {
