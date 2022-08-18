@@ -24,7 +24,7 @@ body {
   justify-content:flex-start;
   gap: 5px;
   width: 100%;
-  height: 80px;
+  height: 60px;
   padding-right: 2vw;
   padding-left: 2vw;
   transition: all 0.7s ease-in;
@@ -100,7 +100,7 @@ body {
 
 #yourcta {
   position: absolute;
-  top: 20px;
+  top: 10px;
   right: 18%;
   display: flex;
 
@@ -145,7 +145,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 0.625rem 1.25rem;
+  padding: 0.5rem 1rem;
 
   font-family: "Poppins";
   font-style: normal;
@@ -164,7 +164,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 0.625rem 1.25rem;
+  padding: 0.5rem 1rem;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
@@ -182,7 +182,7 @@ body {
 cursor: pointer;
 }
 #logo img {
-  height: 3.375rem;
+  height: 40px;
 }
 
 
@@ -205,10 +205,10 @@ cursor: pointer;
 
 .hamburger div {
   position: relative;
-  top: -3.5px;
+  top: -0.5em;
   right: 3vw;
-  width: 2.6rem;
-  height: 8px;
+  width: 2rem;
+  height: 4px;
   border-radius: 3px;
   background: #f37821;
   margin-top: 6px;
@@ -266,7 +266,7 @@ Animations
 }
 #toggle:checked + .hamburger .meat {
   transform: rotate(45deg);
-  margin-top: -8px;
+  margin-top: -4px;
 }
 
 #toggle:checked + .hamburger + .nav {
@@ -282,21 +282,21 @@ Animations
   }
   main {
     position: relative;
-    top: 20px;
+    top: 0px;
     padding-left: 20px;
     padding-right: 20px;
   }
   #title {
     font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.25rem;
-  line-height: 140%;
-  color: #030029;
-position: relative;
-top:25px;
-
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 140%;
+    color: #030029;
+    position: relative;
+    top:30px;
   }
+
   #fill {
     font-family: 'Poppins';
 font-style: normal;
@@ -488,7 +488,7 @@ border: transparent;
     }
     main {
       padding: 0px 30px;
-      top: 120px;
+      top: 80px;
     }
     
   }
@@ -553,10 +553,11 @@ border: transparent;
       z-index: 10;
       padding-left: 20px;
     }
-  
-    .menu-wrap{
-      display: none;
+    #logo img {
+      height: 45px;
     }
+  
+    
     #mycta .login {
       font-weight: 700;
       padding: 10px 24px;
@@ -566,6 +567,9 @@ border: transparent;
       padding: 10px 24px;
     }
     .hamburger {
+      display: none;
+    }
+    .nav {
       display: none;
     }
     #yourcta {
